@@ -7,7 +7,7 @@ services:
       context: ./
       dockerfile: docker/prod/nodejs_v1/Dockerfile 
     ports:
-      - "3000:3000"
+      - "3200:3000"
     volumes:
     - /code/node_modules
     container_name: hackjklu_nodejs_v1
