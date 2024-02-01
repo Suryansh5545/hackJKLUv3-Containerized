@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nodejs_v1:
+    hostname: nodejs_v1
+    build:
+      context: ./
+      dockerfile: docker/dev/nodejs_v1/Dockerfile
+    ports:
+      - "49153:49153"
+      - "3000:3000"
+    volumes:
+    - ./:/code
+    - /code/node_modules
